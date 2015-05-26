@@ -1,0 +1,41 @@
+div#outline {
+  border: 1px solid #999;
+  background-color: #f9f9f9;
+  display: inline-block;
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+div#outline a {
+  text-decoration: none;
+}
+div#outline > div.outline_header {
+  font-size: 16px;
+  font-weight: bold;
+}
+div#outline > div.outline_header > a {
+  font-size: 14px;
+  font-weight: normal;
+}
+div#outline > div.outline_header > a > span.show_text {
+  display: none;
+}
+div#outline ul,
+div#outline li {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+div#outline .indent_1:first-child {
+  margin-top: 1rem;
+}
+div#outline .indent_1:last-child {
+  margin-bottom: 1rem;
+}
+div#outline .indent_2,
+div#outline .indent_3,
+div#outline .indent_4,
+div#outline .indent_5,
+div#outline .indent_6 {
+  margin-left: 2rem;
+}
