@@ -1,0 +1,71 @@
+/*
+レイアウトを整える
+*/
+form {
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  background-color: #f0f0f0;
+  padding: 8px 15px;
+}
+form input[type=text] {
+  font-size: 18px;
+}
+form button {
+  font-size: 18px;
+  border: 1px solid #999;
+  cursor: pointer;
+  height: 30px;
+}
+form button:hover {
+  border: 1px solid #666;
+  cursor: pointer;
+}
+form .field_wrapper {
+  margin-bottom: 10px;
+}
+form .button_wrapper > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+form .button_wrapper > ul > li {
+  display: inline;
+  margin-right: 8px;
+}
+form .button_wrapper > ul > li:last-child {
+  margin-right: 0;
+}
+div#wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/*
+メッセージボックス
+*/
+#message_box {
+  top: 10px;
+  position: fixed;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+}
+#message_box span {
+  padding: 6px 14px;
+  text-align: center;
+  box-shadow: 1px 1px 3px #ccc;
+}
+#message_box.progress span {
+  background-color: #ffc;
+  border: 2px solid #fc9;
+}
+#message_box.success span {
+  background-color: #9f9;
+  border: 2px solid #093;
+}
+#message_box.error span {
+  background-color: #f99;
+  border: 2px solid #f03;
+}
