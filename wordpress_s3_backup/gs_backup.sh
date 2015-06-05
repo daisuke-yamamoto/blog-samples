@@ -1,5 +1,5 @@
 #!/bin/sh
-GSUTIL_BIN=gsutil
+GSUTIL_BIN=$HOME/gsutil/gsutil
 MYSQLDUMP_BIN=/usr/bin/mysqldump
 
 # 保存先のバケット名
