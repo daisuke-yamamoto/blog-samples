@@ -12,6 +12,6 @@ urlpatterns += patterns(
         sample1_tests.TestLoginRequiredMixin2.as_view(),
         name='test_sample1_login_required_mixin2'),
     url(r'^test/sample1/login_required_mixin3/$',
-        sample1_tests.TestLoginRequiredMixin2.as_view(),
+        sample1_tests.TestLoginRequiredMixin3.as_view(),
         name='test_sample1_login_required_mixin3'),
 )
