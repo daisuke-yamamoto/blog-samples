@@ -74,11 +74,6 @@ def _has_mark(password):
         例）「range(0x20, 0x2f + 1)」から「[\x20-\x2f]」を取得します。
         """
         return r'[\x%x-\x%x]' % (r[0], r[-1])
-        '''
-        start, end = [hex(i).replace('0x', '\\x') for i in (r[0], r[-1])]
-        print('[%s-%s]' % (start, end))
-        return '[%s-%s]' % (start, end)
-        '''
 
     p = r'(?:%s|%s|%s|%s)' % (
         range_to_pattern(PASSWORD_MARK_RANGE1),
