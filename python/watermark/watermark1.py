@@ -20,7 +20,7 @@ fnt = ImageFont.truetype(font='fonts/Arial Black.ttf', size=fontsize)
 textw, texth = draw.textsize(watermark, font=fnt)
 
 # 透かし文字を中央に入れます。
-draw.text(((base.width - textw) / 2, (base.width - texth) / 2),
+draw.text(((base.width - textw) / 2, (base.height - texth) / 2),
           watermark, font=fnt, fill=color + (opacity,))
 
 # 画像オブジェクトを重ねます。
