@@ -47,6 +47,7 @@ function get_outline_info($content) {
                     $outline .= sprintf('<ul class="indent_%s"><li>', $current_level);
                 }
 
+                // ※2016/1/13追加
                 // 見出しのレベルが変わった場合は、現在のレベル以下の出現回数をリセットします。
                 for ($idx = $current_level + 0; $idx < count($sub_levels); $idx++) {
                     $sub_levels[$idx] = 0;
@@ -66,6 +67,8 @@ function get_outline_info($content) {
                 $level_fullpath[] = $sub_levels[$idx];
             }
             $target_anchor = '#outline_' . implode('_', $level_fullpath);
+
+            // ※2016/1/13修正
             // 目次に、<a href="#outline_1_2">1.2 見出し</a>のような形式で見出しを追加します。
             $outline .= sprintf('<a href="%s">%s. %s</a>', $target_anchor, implode('.', $level_fullpath), $text);
 
